@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
@@ -28,12 +30,12 @@ function Navbar() {
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex flex-shrink-0 items-center">
                                 <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Employee Management Service"/>
-                                <span  className="text-white font-mono italic">Employee Management System</span>
+                                <Link to="/" className="text-white font-mono italic">Employee Management System</Link>
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
                                     {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-                                    <a href="#" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Add Empolyee</a>
+                                    <Link to="/addemployee" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Add Empolyee</Link>
                                     <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
                                     <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
                                     <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
