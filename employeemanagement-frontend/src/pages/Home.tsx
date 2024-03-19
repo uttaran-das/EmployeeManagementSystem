@@ -39,12 +39,12 @@ function Home() {
                     <tr>
                         {
                             keys.map((key) => (
-                                <th scope="col" className="px-6 py-3">
+                                <th scope="col" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {key}
                                 </th>
                             ))
                         }
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             Action
                         </th>
                     </tr>
@@ -56,16 +56,16 @@ function Home() {
                                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {employee.id}
                                 </th>
-                                <td className="px-6 py-4">
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {employee.username}
                                 </td>
-                                <td className="px-6 py-4">
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {employee.firstname}
                                 </td>
-                                <td className="px-6 py-4">
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {employee.lastname}
                                 </td>
-                                <td className="px-6 py-4">
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {employee.email}
                                 </td>
                                 <td className="px-6 py-4">
